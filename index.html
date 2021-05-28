@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/png-transparent-london-flag-of-the-united-kingdom-zazzle-flag-of-england-england-flag-world-flag-of-the-united-states.png" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>City Of London</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+        <div class="logo">   
+         <a href="#"><strong class="LONDON">LONDON</strong></a>
+        </div>
+        <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="lifestyle.html">LifeStyle</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="connect with us.html">Connect With Us</a></li>
+        </ul>
+        <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    </nav>
+    <div class="banner"></div>
+      <div class="about">
+        <div class="content">
+          <div class="title">Welcome To The City of LONDON.</div>
+          <h2>A City with diverse cultures and ethnicity</h2>   
+        </div>
+      </div>
+    </div> 
+
+     <!--View Botswana video-->
+     <div id="viewlondon">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/X8zLJlU_-60" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <hr class="devider2">
+
+    <!--Main container-->
+    <main>
+        <h3>Blend In...</h3>
+        <div class="blendcontainer">
+            <div class="insidecontainer1"><h4>London Eye</h4><img class="contimage" src="images/cbb431b093858a5a1fb9f52fe10d7673.jpg" width="100%" >
+                Enjoy amazing 360-degree views over London from the London Eye, a rotating observation wheel which is 135 metres (443 ft) high. 
+                Spot some of the capital's most iconic landmarks, including Big Ben, the Houses of Parliament and Buckingham Palace.</div>
+
+            <div class="insidecontainer2"><h4>Bus Tours</h4><img class="contimage" src="images/open_top_london_bus_tour_640x360.jpg" width="100%" >
+                Choose from sightseeing tours of top London landmarks, night-time tours, movie tours and even tours with afternoon tea. 
+                Many bus tours let you jump on and off so you can visit attractions, have lunch or go shopping. Book your bus tour now!</div>
+
+            <div class="insidecontainer3"><h4>London Museums</h4><img class="contimage" src="images/3516-640x360-great_court_large.jpg" width="100%" >
+                No visit to London is complete without checking out its fantastic selection of museums and galleries, from big hitters to 
+                quirkier specialist museums. You'll see there's one to suit every interest and many of them are free to visit.</div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="footer-content">
+        <h3>About London</h3>
+        <p>Lodon is in the UK. The heart and network of UK, a must visit geographic vast interesing location and UK's heritage still held intact</p>
+        <ul class="socials">
+           
+        </ul>   
+   </div>
+   <div class="footer-bottom">
+       <p>Copyright &copy;2021 London UK. Designed by <span>Tapiwa Mlotshiwa</span></p>
+   </div>
+</footer>
+<!--Sticky navigation script-->
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn"); 
+
+    menuBtn.onclick = ()=>{
+       navbar.classList.add("show");
+       menuBtn.classList.add("hide");
+       body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+       body.classList.remove("disabled");
+       navbar.classList.remove("show");
+       menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }  
+   </script> 
+</html>

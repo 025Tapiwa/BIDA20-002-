@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>City Of London</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+        <div class="logo">   
+         <a href="#"><strong class="LONDON">LONDON</strong></a>
+        </div>
+        <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="lifestyle.html">LifeStyle</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="connect with us.html">Connect With Us</a></li>
+        </ul>
+        <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    </nav>
+    <div class="banner"></div>      
+    <div class="frstmain-header"><h1>Upcoming Events</h1></div>
+    <main>
+        <div class="fmcontainer">
+            <div class="fmcard">
+                <div class="img-card11"></div>
+                <div class="text-card">
+                    <h4>The Lion King at the Lyceum Theatre</h4>
+                </div>
+                <div class="stats-card">
+                  <div class="social border">
+                    <i class="fab fa-facebook"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="fmcard">
+                <div class="img-card2"></div>
+                <div class="text-card">
+                    <h4>Scenes in the Square at Leicester Square</h4>
+                </div>
+                <div class="stats-card">
+                  <div class="social border">
+                    <i class="fab fa-facebook"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="fmcard">
+                <div class="img-card3"></div>
+                <div class="text-card">
+                    <h4>The London Paladium</h4>
+                </div>
+                <div class="stats-card">
+                  <div class="social border">
+                    <i class="fab fa-facebook"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="scndmain-header"><h1>Previous Events</h1></div>
+    <main>
+        <div class="fmcontainer">
+            <div class="fmcard">
+                <div class="img-card4"></div>
+                <div class="text-card">
+                    <h4>& Juliet musical at the Shaftesbury Theatre</h4>
+                </div>
+                <div class="stats-card">
+                  <div class="social border">
+                    <i class="fab fa-facebook"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="fmcard">
+                <div class="img-card5"></div>
+                <div class="text-card">
+                    <h4>Jamie musical at Apollo Theatre</h4>
+                </div>
+                <div class="stats-card">
+                  <div class="social border">
+                    <i class="fab fa-facebook"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="fmcard">
+                <div class="img-card666"></div>
+                <div class="text-card">
+                    <h4>The Bob Marley Musical at the Lyric Theatre</h4>
+                </div>
+                <div class="stats-card">
+                  <div class="social border">
+                    <i class="fab fa-facebook"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="social border">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <h3>About London</h3>
+        <p>Lodon is in the UK. The heart and network of UK, a must visit geographic vast interesing location and UK's heritage still held intact</p>
+        <ul class="socials">
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/login?lang=en-gb"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        </ul>   
+   </div>
+   <div class="footer-bottom">
+       <p>Copyright &copy;2021 London UK. Designed by <span>Tapiwa Mlotshiwa</span></p>
+   </div>
+</footer>
+<!--Sticky navigation script-->
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn"); 
+
+    menuBtn.onclick = ()=>{
+       navbar.classList.add("show");
+       menuBtn.classList.add("hide");
+       body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+       body.classList.remove("disabled");
+       navbar.classList.remove("show");
+       menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }  
+   </script> 
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>City Of London</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+        <div class="logo">   
+         <a href="#"><strong class="LONDON">LONDON</strong></a>
+        </div>
+        <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="lifestyle.html">LifeStyle</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="connect with us.html">Connect With Us</a></li>
+        </ul>
+        <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    </nav>
+    <div class="banner"></div>
+
+    <div class="about-uscontainer">
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      </div>
+      
+      <div id="London" class="tabcontent">
+        <h3>Mission</h3>
+        <p>…City Mission (1826) and the London City Mission (1835) both sought to evangelize and rehabilitate the urban poor. 
+          Beginning with home visitation and tract distribution by volunteer lay missionaries, the city mission movement expanded 
+          into Sunday school, day school, and temperance activities with paid missionaries; and eventually it provided food,…</p>
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+        <h3>Vision</h3>
+        <p>The City of London Corporation is the governing body of the Square Mile dedicated to a vibrant and thriving City, 
+          supporting a diverse and sustainable London within a globally-successful UK.</p>
+      </div>
+      
+      <div id="Tokyo" class="tabcontent">
+        <h3>Laws</h3>
+        <p>Both businesses and residents of the City, or "Square Mile", are entitled to vote in City elections, 
+          and in addition to its functions as the local authority—analogous to those undertaken by the 32 boroughs 
+          that administer the rest of the Greater London region—it takes responsibility for supporting the financial counterpart.</p>
+      </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <h3>About London</h3>
+        <p>Lodon is in the UK. The heart and network of UK, a must visit geographic vast interesing location and UK's heritage still held intact</p>
+        <ul class="socials">
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/login?lang=en-gb"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        </ul>   
+   </div>
+   <div class="footer-bottom">
+       <p>Copyright &copy;2021 London UK. Designed by <span>Tapiwa Mlotshiwa</span></p>
+   </div>
+</footer>
+<!--Sticky navigation script-->
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn"); 
+
+    menuBtn.onclick = ()=>{
+       navbar.classList.add("show");
+       menuBtn.classList.add("hide");
+       body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+       body.classList.remove("disabled");
+       navbar.classList.remove("show");
+       menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }  
+   </script> 
+   <script>
+       function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+   </script>
+</html>

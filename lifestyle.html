@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>London Lifestyle</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+        <div class="logo">   
+         <a href="#"><strong class="LONDON">LONDON</strong></a>
+        </div>
+        <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="lifestyle.html">LifeStyle</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="connect with us.html">Connect With Us</a></li>
+        </ul>
+        <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+        </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  
+   <div class="lifestyleheader"><h1>Endugle With The London Lifestyle</h1></div>
+  <!--Lifestyle container-->
+<div class="lifestylecontainer">
+    <div class="lifestylecard">
+        <div class="imgbx" data-text="PlacesToStay">
+            <img src="images/where-to-stay.jpg" style="width: 100%; height: 100%;">
+        </div>
+        <div class="cardcontent">
+          <div>
+            <h4>Places To Stay</h4>
+            <p>Whatever your budget, find and book accommodation in London.</p>
+            <a href="https://www.booking.com/searchresults.en-gb.html?aid=1939996;label=map_widget_default_click_label;sid=9577df1ab77132b77007aaf63e161780;dest_type=latlong;latitude=51.5073509;longitude=-0.1277583&">Learn More</a>
+          </div>
+        </div>
+    </div>
+    <div class="lifestylecard">
+        <div class="imgbx" data-text="Resturants">
+            <img src="images/Le-Pont-de-la-tour-Terrace-.jpg" style="width: 100%; height: 100%;">
+        </div>
+        <div class="cardcontent">
+          <div>
+            <h4>Local Resturants</h4>
+            <p>Dine with our local Resturants and taste our culture</p>
+            <a href="https://www.squaremeal.co.uk/restaurants/best/londons-top-100-restaurants_262">Read More</a>
+          </div>
+        </div>
+    </div>
+    <div class="lifestylecard">
+        <div class="imgbx" data-text="Museums">
+            <img src="images/3516-640x360-great_court_large.jpg" style="width: 100%; height: 100%;">
+        </div>
+        <div class="cardcontent">
+          <div>
+            <h4>Museum</h4>
+            <p>Know the roots of London. Your adventure starts here</p>
+            <a href="https://www.visitlondon.com/things-to-do/sightseeing/london-attraction/museum/top-museums-and-galleries-london">View More</a>
+          </div>
+        </div>
+    </div>
+    <div class="lifestylecard">
+        <div class="imgbx" data-text="TourBus">
+            <img src="images/lastminutelondoneye640x360.jpg" style="width: 100%; height: 100%;">
+        </div>
+        <div class="cardcontent">
+          <div>
+            <h4>Top Attractions</h4>
+            <p>Familiarize Yourself with London Top Attraction sightseeing</p>
+            <a href="https://www.visitlondon.com/things-to-do/sightseeing/london-attraction/top-ten-attractions">View More</a>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+<footer>
+    <div class="footer-content">
+        <h3>About London</h3>
+        <p>Lodon is in the UK. The heart and network of UK, a must visit geographic vast interesing location and UK's heritage still held intact</p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/login?lang=en-gb"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        </ul>   
+   </div>
+   <div class="footer-bottom">
+       <p>Copyright &copy;2021 London UK. Designed by <span>Tapiwa Mlotshiwa</span></p>
+   </div>
+</footer>
+
+    <!--Sticky navigation script-->
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn"); 
+    
+        menuBtn.onclick = ()=>{
+           navbar.classList.add("show");
+           menuBtn.classList.add("hide");
+           body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+           body.classList.remove("disabled");
+           navbar.classList.remove("show");
+           menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }  
+       </script> 
+</html>
